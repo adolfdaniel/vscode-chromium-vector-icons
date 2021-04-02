@@ -1,0 +1,73 @@
+{
+	"name": "vscode-chromium-vector-icons",
+	"displayName": "Vector Icon Viewer",
+	"description": "Preview Chromium Vector Icons in VS Code.",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/adolfdaniel/vscode-chromium-vector-icons.git"
+	},
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"author": "Adolf Daniel",
+	"license": "MIT",
+	"keywords": [
+		"vector icons",
+		"vs code",
+		"chromium"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:chromium-vector-icons-viewer.previewIcon"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "chromium-vector-icons-viewer.previewIcon",
+				"title": "Preview Vector Icon",
+				"when": "resourceExtname == .icon",
+				"icon": "$(open-preview)"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "chromium-vector-icons-viewer.previewIcon",
+					"when": "resourceExtname == .icon"
+				}
+			],
+			"editor/title": [
+				{
+					"when": "resourceExtname == .icon",
+					"command": "chromium-vector-icons-viewer.previewIcon",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.55.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}
