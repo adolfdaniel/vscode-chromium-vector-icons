@@ -19,3 +19,7 @@ The file extension should be `.icon` to preview using this extension.
 Initial release of Vector Icon Previewer.
 
 ---
+
+## Attribution
+
+<div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
