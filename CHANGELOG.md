@@ -2,6 +2,11 @@
 
 All notable changes to the "chromium-vector-icons-viewer" extension will be documented in this file.
 
-## [Unreleased]
+## [1.0.0]
 
-- Initial release
+- Initial release.
+
+## [1.0.1]
+
+- Fixed CSS issue in the preview page.
+- Preview current page on active file change.

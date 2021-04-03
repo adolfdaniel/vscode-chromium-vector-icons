@@ -2,7 +2,7 @@
 	"name": "vscode-chromium-vector-icons",
 	"displayName": "Vector Icon Viewer",
 	"description": "Preview Chromium Vector Icons in VS Code.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/adolfdaniel/vscode-chromium-vector-icons.git"

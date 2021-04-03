@@ -237,8 +237,7 @@ function updatePreviewIfVectorIcon(sourceCode, container) {
 function setUpPreviewPanel(source_code) {
   if (!source_code) { return; }
 
-  const container = document.getElementById('container');
-
+  const container = document.getElementById('preview-container');
   const orig = document.createElement('div');
   orig.id = 'preview-original';
   container.appendChild(orig);
@@ -246,5 +245,6 @@ function setUpPreviewPanel(source_code) {
   const scaled = document.createElement('div');
   scaled.id = 'preview-scaled';
   container.appendChild(scaled);
+
   updatePreviewIfVectorIcon(source_code, container);
 }
