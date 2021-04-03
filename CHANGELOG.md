@@ -11,6 +11,6 @@ All notable changes to the "chromium-vector-icons-viewer" extension will be docu
 - Fixed CSS issue in the preview page.
 - Preview current page on active file change.
 
-## [1.0.1]
+## [1.0.2]
 
 - Added an icon for the extension.
