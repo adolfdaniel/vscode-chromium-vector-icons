@@ -150,6 +150,7 @@ class VectorIcon {
 
     if (cmd[0] === 'STROKE') {
       this.currentPath_.setAttribute('stroke-width', cmd[1] + 'px');
+      this.currentPath_.style['fill'] = 'transparent';
       return;
     }
 
