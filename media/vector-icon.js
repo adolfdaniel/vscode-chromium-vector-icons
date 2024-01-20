@@ -134,6 +134,11 @@ class VectorIcon {
       return;
     }
 
+    if (cmd[0] === 'PATH_COLOR_ALPHA') {
+      this.currentPath_.style['opacity'] = cmd[1] / 255;
+      return;
+    }
+
     if (cmd[0] === 'PATH_COLOR_ARGB') {
       const color =
         'rgba(' + [cmd[2], cmd[3], cmd[4], cmd[1]]
